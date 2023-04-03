@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+  
+html {
+  box-sizing: border-box;
+} 
+  
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 10vh;
+  padding: 2rem;
+}
+
+
+.app {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  /* grid-template-rows: auto repeat(3, 15rem) auto; */
+  gap: 2rem;
+}
+
+/* Transfers */
+.transfers {
+  grid-row: span 3;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: scroll;
+  height: 29rem;
+}
+
+.transfers__row{
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.transfers__name{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  color: #4C4C47;
+  font-weight: 600;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+  background-image: linear-gradient(to top right, #006494, #C4F7A1);
+  width: 200px;
+}
+
+.transfers__date{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #666;
+}
+
+.transfers__type--deposit{
+  background-image: linear-gradient(to top right, #70EE9C, #B5F44A);
+  border-radius: 10rem;
+  padding: 0.1rem 1rem;
+}
+
+.transfers__type--withdraw{
+  background-image: linear-gradient(to top left, #E7605D, #E53B3B);
+  border-radius: 10rem;
+  padding: 0.1rem 1rem;
+}
+
+.transfers__value{
+  font-size: 1.4rem;
+  margin-left: auto;
+}
