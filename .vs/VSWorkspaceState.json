@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\client"
   ],
-  "SelectedNode": "\\C:\\Users\\linta\\Source\\Repos\\BetaBankProject",
+  "SelectedNode": "\\client\\index.html",
   "PreviewInSolutionExplorer": false
 }
