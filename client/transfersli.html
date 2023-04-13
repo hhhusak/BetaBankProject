@@ -52,19 +52,48 @@
             <div class="transfers__date">date</div>
             <div class="transfers__value transfers__type--withdraw">-1220₴</div>
           </div>
-          </div>
         </div>
-  
-        <div class="operation operation--transfer">
-          <h2>Transfer money</h2>
-          <form class="form form--transfer">
-            <input type="text" class="form__input form__input--to" />
-            <input type="number" class="form__input form__input--amount" />
-            <button class="form__btn form__btn--transfer">&rarr;</button>
-            <label class="form__label">Transfer to</label>
-            <label class="form__label">Amount</label>
-          </form>
-        </div>
+
+          <form>
+            <div class="form-group">
+                <div class="col-md-5 mb-4">
+                  <label for="account" class="fs-3">З картки:</label>
+                  <select class="form-control bg-transparent" id="account">
+                    <option>UAH картка</option>
+                    <option>USD картка</option>
+                    <option>EUR картка</option>
+                  </select>
+                </div>
+
+                <div class="col-md-5 mb-4">
+                  <label for="reciever" class="fs-3">Отримувач</label>
+                  <div class="card h-50 " style="width: 375px; height: 100px; background-color: #f8f8f8; border-radius: 12px;">
+
+                    <div class="card-body d-flex align-items-center">
+                      <input type="text" class="form-control border-0 border-bottom" id="recipient" style="background-color: #f8f8f8;" placeholder="Номер картки">
+                      <label for="floatingEmptyPlaintextInput"></label>
+                    </div>
+                  </div>                 
+                </div>
+              
+                <div class="col-md-6 mb-4">
+                  <label for="amount" class="fs-3">Сума</label>
+                  <div class="input-group d-flex align-items-center">
+                    <input type="number" class="form-control border-0 border-bottom bg-transparent" id="amount" placeholder="Введіть суму">
+                    <label for="floatingEmptyPlaintextInput"></label>
+                    <div class="input-group-append">
+                      <select class="form-select bg-transparent">
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+             </div>
+              <button type="submit" class="btn btn-success" style="border-radius: 8px; font-size: 23px;">Переказати</button>
+          </form>        
       </main>
 </body>
 </html>
+
