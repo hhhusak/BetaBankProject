@@ -80,3 +80,20 @@ body {
   font-size: 1.4rem;
   margin-left: auto;
 }
+
+/*Balance*/
+.balanceWrapper{
+  margin-right: 40px;
+}
+
+.balance{
+  font-size: 20px;
+  text-decoration: none;
+  color: #198754;
+}
+
+.balance:hover {
+  color: #198754;
+}
+
+
