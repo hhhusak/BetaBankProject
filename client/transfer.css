@@ -10,7 +10,7 @@ html {
   
 body {
   font-family: 'Poppins', sans-serif;
-  color: #444;
+  color: #050404;
   background-color: #f3f3f3;
   height: 10vh;
   padding: 2rem;
@@ -30,8 +30,8 @@ body {
 /* Transfers */
 .transfers {
   grid-row: span 3;
-  background-color: #fff;
-  border-radius: 1rem;
+  background-color: #e9e8e8;
+  border-radius: 2rem;
   overflow: scroll;
   height: 29rem;
 }
@@ -40,44 +40,48 @@ body {
   padding: 2rem 4rem;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #000000;
 }
 
 .transfers__name{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;
-  color: #4C4C47;
+  font-family: FreeMono;
+  color: #040404;
   font-weight: 600;
-  padding: 0.1rem 1rem;
-  border-radius: 10rem;
+  padding: 0.1rem 1.3rem;
+  /* border-radius: 10rem; */
   margin-right: 2rem;
-  background-image: linear-gradient(to top right, #006494, #C4F7A1);
+  background-image: linear-gradient(to top right, #e9e8e8, #e9e8e8);
   width: 200px;
 }
 
 .transfers__date{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
+  font-family: Avantgarde;
   font-weight: 500;
-  color: #666;
+  color: #030202;
 }
 
 .transfers__type--deposit{
-  background-image: linear-gradient(to top right, #70EE9C, #B5F44A);
+  background-image: linear-gradient(to top right, #43e459, #31f144);
+  font-family:FreeMono;
   border-radius: 10rem;
-  padding: 0.1rem 1rem;
+  padding: 0.2rem 2rem;
 }
 
 .transfers__type--withdraw{
-  background-image: linear-gradient(to top left, #E7605D, #E53B3B);
+  background-image: linear-gradient(to top right, #f84444, #e63838);
+  font-family:FreeMono;
   border-radius: 10rem;
-  padding: 0.1rem 1rem;
+  padding: 0.2rem 2rem;
 }
 
 .transfers__value{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-left: auto;
 }
 
@@ -95,5 +99,3 @@ body {
 .balance:hover {
   color: #198754;
 }
-
-
