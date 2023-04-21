@@ -13,18 +13,18 @@ body {
   color: #050404;
   background-color: #f3f3f3;
   height: 10vh;
-  padding: 2rem;
 }
 
 
 .app {
+  overflow: hidden;
   position: relative;
   max-width: 100rem;
   margin: 4rem auto;
   display: grid;
   grid-template-columns: 4fr 3fr;
   /* grid-template-rows: auto repeat(3, 15rem) auto; */
-  gap: 2rem;
+  gap: 15rem;
 }
 
 /* Transfers */
@@ -34,48 +34,54 @@ body {
   border-radius: 2rem;
   overflow: scroll;
   height: 29rem;
+  overflow: auto;
+  }
+
+.transfers::-webkit-scrollbar {
+    width: 8px;
+}
+
+.transfers::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
 }
 
 .transfers__row{
   padding: 2rem 4rem;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid #000000;
-}
+  border-bottom: 1px solid #38a83d;
+  }
 
 .transfers__name{
   font-size: 1.2rem;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 500;
-  font-family: FreeMono;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #040404;
-  font-weight: 600;
+  font-weight: 550;
   padding: 0.1rem 1.3rem;
-  /* border-radius: 10rem; */
-  margin-right: 2rem;
+  margin-right: 3.5rem;
   background-image: linear-gradient(to top right, #e9e8e8, #e9e8e8);
   width: 200px;
 }
 
 .transfers__date{
   font-size: 1.2rem;
-  text-transform: uppercase;
-  font-family: Avantgarde;
-  font-weight: 500;
-  color: #030202;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #040404;
+  font-weight: 550;
 }
 
 .transfers__type--deposit{
-  background-image: linear-gradient(to top right, #43e459, #31f144);
-  font-family:FreeMono;
+  /* background-image: linear-gradient(to top right, #43e459, #31f144); */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   border-radius: 10rem;
   padding: 0.2rem 2rem;
 }
 
 .transfers__type--withdraw{
-  background-image: linear-gradient(to top right, #f84444, #e63838);
-  font-family:FreeMono;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   border-radius: 10rem;
   padding: 0.2rem 2rem;
 }
