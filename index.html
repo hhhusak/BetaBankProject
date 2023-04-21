@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>BetaBankProject</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="files/LOGGO.png" width="70px" height="auto" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 23px; font-family: Monaco;" href="#">Main</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 23px; font-family: Monaco;" href="#">About</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 23px; font-family: Monaco;" href="#">Contacts</a> 
+              </li>
+            </ul>
+            <form class="d-flex">
+                <button id="signInButton" class="btn btn-outline-success me-2" type="button">Sign up</button>
+                <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+                <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Enter your data</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Login</label>
+                            <input type="text" class="form-control" id="loginLabel">
+                          </div>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Password</label>
+                            <input type="text" class="form-control" id="passLabel">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="logInBtn">Log in</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="wrapper">
+        <div class="logotype">
+          <h2>
+            <center>
+              <p style="display:inline-block;margin:0;">Welcome to</p>
+              <img src="files/LOGGO.png" width="50px" height="auto" style="display:inline-block;vertical-align:middle;margin-right:10px;margin-bottom:5px;" alt="">
+              <p style="display:inline-block;margin: -15;">etaBank</p>
+            </center>
+          </h2>
+        </div>    
+          <link href="https://fonts.googleapis.com/css?family=helvetica&display=swap" rel="stylesheet">
+          <section class="cont">
+            <div class="services">
+              <div class="service">
+                <h3>Віртуальні послуги</h3>
+                <p>Ми даємо можливість отримувати доступ до своїх банківських рахунків, перевіряти баланс, переказувати гроші, розпочинати платіжні операції та інше, не відходячи від комп'ютера або мобільного пристрою.</p>
+              </div>
+              <div class="service">
+                <h3>Розробка програмного забезпечення</h3>
+                <p>Ми створимо для вас програмне забезпечення, яке допоможе автоматизувати бізнес-процеси та покращити ефективність ваших транзакцій.</p>
+              </div>
+              <div class="service">
+                <h3>Маркетингові послуги</h3>
+                <p>Ми допоможемо вам просунути ваш бізнес в Інтернеті та залучити нових клієнт а також можемо впроводити дослідження ринку, щоб з'ясувати потреби та бажання своїх клієнтів та аналізувати тенденції на ринку.</p>
+              </div>
+            </div>
+              <label class="accordion accordion--1" for="open-1">
+                  <input class="accordion__open" id="open-1" type="radio" name="acoordion-1">
+                  <input class="accordion__close" id="close-1" type="radio" name="acoordion-1">
+                  <div class="accordion__tab">OPEN</div>
+                  <div class="accordion__wrapper">
+                      <dl class="accordion__box">
+                          <dt class="accordion__patition">
+                              <span class="accordion__number">01</span>
+                              <span class="accordion__title">FAQ item title</span>
+                          </dt>
+                          <dd class="accordion__text"
+                          <ul>
+                              <li>Transfers</li>
+                              <li>Accumulation of funds</li>
+                              <li>Other</li>
+                              <p>Thank you for visiting our bank!</p>
+                          </ul>
+                          </dd>
+                      </dl>
+                  </div>
+                  <label for="close-1" class="accordion__button">
+                      <span class="accordion__buttonText">CLOSE</span>
+                  </label>
+              </label>
+          </section> 
+    </div>
+    </div>
+    <footer>
+      <nav>
+      <a href="#">MAIN</a> 
+      <a href="#">ABOUT</a> 
+      <a href="#">CONTACTS</a> 
+      <a href="#">PROJECT</a> 
+    </nav>
+    <span class="bebrabank">
+    <a style="bottom: 0;" href="index.html"><img class="loggo-fut" src="files/logo-fut.png" width="40px" height="auto" alt=""><p style="margin: -15;">etaBank</p>
+    </span>
+    </a>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="futer.css">
+    <script src="script.js"></script>
+</body>
+</html>
