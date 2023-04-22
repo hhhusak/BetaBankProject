@@ -26,10 +26,10 @@ const btnSend = document.querySelector('#btnsend');
 const balanceLabel = document.querySelector('.balanceWrapper');
 const inputAmount = document.querySelector('#amount');
 
-const displayTransfers = function(transfers){
+const displayTransfers = function (transfers) {
     containerTransfers.innerHTML = '';
 
-    transfers.forEach(function(tran, i){
+    transfers.forEach(function (tran, i) {
         const type = tran > 0 ? 'deposit' : 'withdraw';
         const html = `
         <div class="transfers__row">
@@ -42,19 +42,19 @@ const displayTransfers = function(transfers){
     });
 }
 
-const updateUI = function(acc) {
+const updateUI = function (acc) {
     displayTransfers(acc.transfers);
 
     displayBalance(acc);
 }
 
-const displayBalance = function(acc){
+const displayBalance = function (acc) {
     const balance = acc.transfers.reduce((acc, tran) => acc + tran, 0);
     acc.balance = balance;
-    balanceLabel.textContent = `${balance}₴`
+    balanceLabel.innerHTML = `<a href="transfersli.html" class="balance">${balance}₴</a>`;
 }
 
-btnSend.addEventListener('click', function(e){
+btnSend.addEventListener('click', function (e) {
     e.preventDefault();
 
     const amount = Number(inputAmount.value);
@@ -62,18 +62,17 @@ btnSend.addEventListener('click', function(e){
         acc => acc.login === inputRecipient.value
     );
 
-    if(amount > 0 &&
-       recipientAcc && 
-       account1.balance >= amount &&
-       recipientAcc !== account1)
-       {
+    if (amount > 0 &&
+        recipientAcc &&
+        account1.balance >= amount &&
+        recipientAcc !== account1) {
         recipientAcc.transfers.push(amount);
         account1.transfers.push(-amount);
 
         inputAmount.value = inputRecipient.value = '';
 
         updateUI(account1);
-       }
+    }
 })
 
 updateUI(account1);
