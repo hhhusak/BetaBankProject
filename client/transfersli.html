@@ -9,6 +9,37 @@
     <title>Transfers</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="files/LOGGO.png" width="70px" height="auto" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="font-size: 29px; font-family: Tahoma, sans-serif" href="mainli.html">Main</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" style="font-size: 29px; font-family: Tahoma, sans-serif" aria-disabled="true" href="#">Transfers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="font-size: 29px; font-family: Tahoma, sans-serif" href="#">HelpUA</a>
+              </li>
+            </ul>
+
+            <!--Balance-->
+            <div class="balanceWrapper"> 
+              <a href="transfersli.html" class="balance">0₴</a>
+            </div>
+             
+            <form class="d-flex">
+                <a class="btn btn-outline-danger" style="width: 100px" href="index.html">Logout</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+=======
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="files/LOGGO.png" width="70px" height="auto" alt=""></a>
@@ -59,14 +90,14 @@
 
           <form>
             <div class="form-group">
-                <div class="col-md-5 mb-4">
+                <!-- <div class="col-md-5 mb-4">
                   <label for="account" class="fs-3">З картки:</label>
                   <select class="form-control bg-transparent" id="account">
                     <option>UAH картка</option>
                     <option>USD картка</option>
                     <option>EUR картка</option>
                   </select>
-                </div>
+                </div> -->
 
                 <div class="col-md-5 mb-4">
                   <label for="reciever" class="fs-3">Отримувач</label>
@@ -86,11 +117,11 @@
                     <input type="number" class="form-control border-0 border-bottom bg-transparent" id="amount" placeholder="Введіть суму">
                     <label for="floatingEmptyPlaintextInput"></label>
                     <div class="input-group-append">
-                      <select class="form-select bg-transparent">
+                      <!-- <select class="form-select bg-transparent">
                         <option value="UAH">UAH</option>
                         <option value="USD">USD</option>
                         <option value="EUR">EUR</option>
-                      </select>
+                      </select> -->
                     </div>
                   </div>
                 </div>
