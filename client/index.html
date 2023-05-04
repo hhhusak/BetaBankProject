@@ -27,13 +27,13 @@
               </li>
             </ul>
             <form class="d-flex">
-                <button id="signInButton" class="btn btn-outline-success me-2" type="button">Sign up</button>
-                <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
-                <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <button class="btn btn-outline-success me-2" type="button" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign up</button>
+              <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#signInModal">Sign in</button>
+                <div class="modal fade" id="signInModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Enter your data</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Log to your account</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
@@ -49,7 +49,45 @@
                         </form>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="logInBtn">Log in</button>
+                        <button type="button" class="btn btn-primary" style="background-color: #20BF55; border-color: #20BF55;" id="logInBtn">Log in</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="signUpModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create new account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Login</label>
+                            <input type="text" class="form-control" id="loginLabel">
+                          </div>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Name</label>
+                            <input type="text" class="form-control" id="passLabel">
+                          </div>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Surname</label>
+                            <input type="text" class="form-control" id="passLabel">
+                          </div>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Password</label>
+                            <input type="text" class="form-control" id="passLabel">
+                          </div>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Repeat password</label>
+                            <input type="text" class="form-control" id="passLabel">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" style="margin-right: 230px;" id="logInBtn">Have an account?</button>
+                        <button type="button" class="btn btn-primary" style="background-color: #20BF55; border-color: #20BF55;" id="logInBtn">Create</button>
                       </div>
                     </div>
                   </div>
@@ -59,7 +97,6 @@
         </div>
       </nav>
       <div class="wrapper">
-      <section class="betabank">
         <div class="logotype">
           <h2>
             <center>
@@ -67,47 +104,65 @@
               <img src="files/LOGGO.png" width="50px" height="auto" style="display:inline-block;vertical-align:middle;margin-right:10px;margin-bottom:5px;" alt="">
               <p style="display:inline-block;margin: -15;">etaBank</p>
             </center>
-          </h2>                   
-      </div>
-        <div class="CARD">
-            <p style="font-weight: bold; font-size: 20px;">інтернет-банк, щоб допомогти вам легше та зручніше управляти своїми фінансами в будь-який час та з будь-якого пристрою.</p>
-        </div>
-      </section>
-      <div class="container">
-        <label class="accordion accordion--1" for="open-1">
-            <input class="accordion__open" id="open-1" type="radio" name="acoordion-1">
-            <input class="accordion__close" id="close-1" type="radio" name="acoordion-1">
-            <div class="accordion__tab">CARD</div>
-            <div class="accordion__wrapper">
-                <dl class="accordion__box">
-                    <dt class="accordion__patition">
-                        <span class="accordion__number">24</span>
-                        <span class="accordion__title">INFO</span>
-                    </dt>
-                    <dd class="accordion__text"
-                    <ul>
-                        <li>transactions</li>
-                        <li>fundraising</li>
-                        <li>bank</li>
-                        <p>gfdghdifhugdifugihufdguhidfuhigiuhdguhi
-                          hdfuhgdfuhiguidfugdfuhgihudfhugfghudfuhg
-                          fudgiuhdfhugidfuhgufhdiuhgudfguhdfuihgfd
-                        hfghfghgfhfghgfhhhhfghlkjlluilkljklguvhusd
-                      sidggfdgdfjuh8igfdgfdjuhgifdgju9ifdgju9igju9</p>
-                    </ul>
-                    </dd>
-                </dl>
+          </h2>
+        </div>    
+          <link href="https://fonts.googleapis.com/css?family=helvetica&display=swap" rel="stylesheet">
+          <section class="cont">
+            <div class="services">
+              <div class="service">
+                <h3>Зручно</h3>
+                <p>Створіть власний рахунок за пару хвилин, не витрачаючи нічого. Придумайте власний логін та зареєструйтесь, вказавши ваші дані.</p>
+              </div>
+              <div class="service">
+                <h3>Безпечно</h3>
+                <p>Ми створимо для вас програмне забезпечення, яке допоможе автоматизувати бізнес-процеси та покращити ефективність ваших транзакцій.</p>
+              </div>
+              <div class="service">
+                <h3>Благодійно</h3>
+                <p>Ми допоможемо вам просунути ваш бізнес в Інтернеті та залучити нових клієнт а також можемо впроводити дослідження ринку, щоб з'ясувати потреби та бажання своїх клієнтів та аналізувати тенденції на ринку.</p>
+              </div>
             </div>
-            <label for="close-1" class="accordion__button">
-                <span class="accordion__buttonText">CLOSE</span>
-            </label>
-        </label>
-        <!-- <div class="section1"> -->
-          <!-- <p style="font-size: 15px;">sdvnsdvdnvdsvkvjcsovjdsvksvmkdivjfnvjnjskvnjs</p> -->
-        <!-- </div> -->
+              <label class="accordion accordion--1" for="open-1">
+                  <input class="accordion__open" id="open-1" type="radio" name="acoordion-1">
+                  <input class="accordion__close" id="close-1" type="radio" name="acoordion-1">
+                  <div class="accordion__tab">OPEN</div>
+                  <div class="accordion__wrapper">
+                      <dl class="accordion__box">
+                          <dt class="accordion__patition">
+                              <span class="accordion__number">01</span>
+                              <span class="accordion__title">FAQ item title</span>
+                          </dt>
+                          <dd class="accordion__text"
+                          <ul>
+                              <li>Transfers</li>
+                              <li>Accumulation of funds</li>
+                              <li>Other</li>
+                              <p>Thank you for visiting our bank!</p>
+                          </ul>
+                          </dd>
+                      </dl>
+                  </div>
+                  <label for="close-1" class="accordion__button">
+                      <span class="accordion__buttonText">CLOSE</span>
+                  </label>
+              </label>
+          </section> 
     </div>
     </div>
-    <link rel="stylesheet" href="style.css">
+    <footer>
+      <nav>
+      <a href="#">MAIN</a> 
+      <a href="#">ABOUT</a> 
+      <a href="#">CONTACTS</a> 
+      <a href="#">PROJECT</a> 
+    </nav>
+    <span class="bebrabank">
+      <a style="bottom: 0;" href="index.html"><img class="loggo-fut" src="files/logo-fut.png" width="40px" height="auto" alt=""><p style="margin: -15;">etaBank</p>
+    </span>
+    </a>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/section.css">
+    <link rel="stylesheet" href="styles/futer.css">
     <script src="script.js"></script>
 </body>
 </html>
