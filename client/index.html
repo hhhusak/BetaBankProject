@@ -27,13 +27,13 @@
               </li>
             </ul>
             <form class="d-flex">
-                <button id="signInButton" class="btn btn-outline-success me-2" type="button">Sign up</button>
-                <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
-                <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <button class="btn btn-outline-success me-2" type="button" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign up</button>
+              <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#signInModal">Sign in</button>
+                <div class="modal fade" id="signInModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Enter your data</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Log to your account</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
@@ -49,7 +49,45 @@
                         </form>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="logInBtn">Log in</button>
+                        <button type="button" class="btn btn-primary" style="background-color: #20BF55; border-color: #20BF55;" id="logInBtn">Log in</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="signUpModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create new account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Login</label>
+                            <input type="text" class="form-control" id="loginLabel">
+                          </div>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Name</label>
+                            <input type="text" class="form-control" id="passLabel">
+                          </div>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Surname</label>
+                            <input type="text" class="form-control" id="passLabel">
+                          </div>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Password</label>
+                            <input type="text" class="form-control" id="passLabel">
+                          </div>
+                          <div class="mb-1">
+                            <label for="recipient-name" class="col-form-label">Repeat password</label>
+                            <input type="text" class="form-control" id="passLabel">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" style="margin-right: 230px;" id="logInBtn">Have an account?</button>
+                        <button type="button" class="btn btn-primary" style="background-color: #20BF55; border-color: #20BF55;" id="logInBtn">Create</button>
                       </div>
                     </div>
                   </div>
@@ -72,6 +110,15 @@
           <section class="cont">
             <div class="services">
               <div class="service">
+                <h3>Зручно</h3>
+                <p>Створіть власний рахунок за пару хвилин, не витрачаючи нічого. Придумайте власний логін та зареєструйтесь, вказавши ваші дані.</p>
+              </div>
+              <div class="service">
+                <h3>Безпечно</h3>
+                <p>Ми створимо для вас програмне забезпечення, яке допоможе автоматизувати бізнес-процеси та покращити ефективність ваших транзакцій.</p>
+              </div>
+              <div class="service">
+                <h3>Благодійно</h3>
                 <h3>Віртуальні послуги</h3>
                 <p>Ми даємо можливість отримувати доступ до своїх банківських рахунків, перевіряти баланс, переказувати гроші, розпочинати платіжні операції та інше, не відходячи від комп'ютера або мобільного пристрою.</p>
               </div>
@@ -119,6 +166,12 @@
       <a href="#">PROJECT</a> 
     </nav>
     <span class="bebrabank">
+      <a style="bottom: 0;" href="index.html"><img class="loggo-fut" src="files/logo-fut.png" width="40px" height="auto" alt=""><p style="margin: -15;">etaBank</p>
+    </span>
+    </a>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/section.css">
+    <link rel="stylesheet" href="styles/futer.css">
     <a style="bottom: 0;" href="index.html"><img class="loggo-fut" src="files/logo-fut.png" width="40px" height="auto" alt=""><p style="margin: -15;">etaBank</p>
     </span>
     </a>

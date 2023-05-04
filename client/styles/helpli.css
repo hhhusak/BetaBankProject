@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+    
+  html {
+    box-sizing: border-box;
+  } 
+    
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #050404;
+    background-color: #ffffff;
+    height: 10vh;
+  
+  }
+  
+  
+  .app {
+    position: relative;
+    max-width: 100rem;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    /* grid-template-rows: auto repeat(3, 15rem) auto; */
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  /* Transfers */
+  .collections {
+    grid-row: span 3;
+    background-color: #e9e8e8;
+    border-radius: 2rem;
+    overflow: scroll;
+    height: 29rem;
+  }
+  
+  .collections__row{
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #000000;
+  }
+  
+  .collections__name{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-family: FreeMono;
+    color: #040404;
+    font-weight: 600;
+    padding: 0.1rem 1.3rem;
+    /* border-radius: 10rem; */
+    margin-right: 2rem;
+    background-image: linear-gradient(to top right, #e9e8e8, #e9e8e8);
+    width: 200px;
+  }
+  
+  .collections__value{
+    font-size: 1.3rem;
+    margin-left: auto;
+  }
+  
+  /*Balance*/
+  .balanceWrapper{
+    margin-right: 40px;
+  }
+  
+  .balance{
+    font-size: 25px;
+    text-decoration: none;
+    color: #198754;
+  }
+  
+  .balance:hover {
+    color: #198754;
+  }
+  

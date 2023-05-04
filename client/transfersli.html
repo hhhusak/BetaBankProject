@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="transfer.css">
+    <link rel="stylesheet" href="styles/transfer.css">
+    <link rel="stylesheet" href="styles/transfer.css">
     <title>Transfers</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
                 <a class="nav-link disabled" aria-current="page" style="font-size: 29px; font-family: Tahoma, sans-serif" aria-disabled="true" href="#">Transfers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" style="font-size: 29px; font-family: Tahoma, sans-serif" href="#">HelpUA</a>
+                <a class="nav-link active" aria-current="page" style="font-size: 29px; font-family: Tahoma, sans-serif" href="helpli.html">HelpUA</a>
               </li>
             </ul>
 
@@ -76,16 +77,20 @@
 
       <main class="app">
         <div class="transfers">
-          <div class="transfers__row">
-            <div class="transfers__name">pavlo9912</div>
-            <div class="transfers__date">date</div>
-            <div class="transfers__value transfers__type--deposit">5 000₴</div>
-          </div>
-          <div class="transfers__row">
-            <div class="transfers__name">anhelina8832</div>
-            <div class="transfers__date">date</div>
-            <div class="transfers__value transfers__type--withdraw">-1220₴</div>
-          </div>
+          <a href="transfersli.html">
+            <div class="transfers__row">
+              <div class="transfers__name">pavlo9912</div>
+              <div class="transfers__date">date</div>
+              <div class="transfers__value transfers__type--deposit">5 000₴</div>
+            </div>
+          </a>
+          <a href="transfersli.html">
+            <div class="transfers__row">
+              <div class="transfers__name">anhelina8832</div>
+              <div class="transfers__date">date</div>
+              <div class="transfers__value transfers__type--withdraw">-1220₴</div>
+            </div>
+          </a>
         </div>
 
           <form>
@@ -132,4 +137,3 @@
       <script src="transfersscript.js"></script>
 </body>
 </html>
-
