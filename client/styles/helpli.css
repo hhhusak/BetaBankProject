@@ -7,6 +7,22 @@
   html {
     box-sizing: border-box;
   } 
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #c7c7c7;
+        border-radius: 8px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #8b8b8b;
+        border-radius: 8px;
+    }
     
   body {
     font-family: 'Poppins', sans-serif;
@@ -32,7 +48,7 @@
   .collections {
     grid-row: span 3;
     background-color: #e9e8e8;
-    border-radius: 2rem;
+    border-radius: 1rem;
     overflow: scroll;
     height: 29rem;
   }

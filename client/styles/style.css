@@ -7,9 +7,14 @@
     padding: 10px;
     background: #ffffff;
 }
+
+  
+
 ::-webkit-scrollbar {
 width: 10px;
+height: 10px;
 }
+
 
 ::-webkit-scrollbar-track {
     background: #c7c7c7;
