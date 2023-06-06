@@ -5,29 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Збір коштів</title>
   <link rel="stylesheet" href="examplebank.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="files/LOGGO.png" width="70px" height="auto" alt=""></a>
+          <a class="navbar-brand" href="index.html"><img src="files/LOGGO.png" width="70px" height="auto" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link disabled" aria-current="page" style="font-size: 23px; font-family: Monaco" aria-disabled="true" href="#">Main</a> 
+                <a class="nav-link" aria-current="page" style="font-size: 23px; font-family: Lato" aria-disabled="true" href="mainli.html">Main</a> 
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" style="font-size: 23px; font-family: Monaco;" href="transfersli.html">Transfers</a>
+                <a class="nav-link" aria-current="page" style="font-size: 23px; font-family: Lato;" href="transfersli.html">Transfers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" style="font-size: 23px; font-family: Monaco;" href="#">Banka</a>
+                <a class="nav-link" aria-current="page" style="font-size: 23px; font-family: Lato;" href="#">Banka</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" style="font-size: 23px; font-family: Monaco;" href="#">HelpUA</a>
+                <a class="nav-link" aria-current="page" style="font-size: 23px; font-family: Lato;" href="helpli.html">HelpUA</a>
               </li>
             </ul>
             <!--Balance-->
@@ -44,30 +47,30 @@
       </nav>
 
       <div class="container my-5">
-        <h1 class="text-center mb-4">Збір коштів</h1>
+        <h1 class="text-center mb-4" style="font-family: Nunito;">Збір коштів</h1>
         <div class="row justify-content-center">
           <div class="col-md-5">
             <form>
               <div class="mb-3">
-                <label for="inputName" class="form-label">Назва фонду/Ім'я отримувача</label>
+                <label for="inputName" class="form-label" style="font-size: 21px; font-family: Montserrat;">Назва фонду/Ім'я отримувача</label>
                 <input type="text" class="form-control" id="inputName" placeholder="Введіть назву фонду або ім'я отримувача" required>
               </div>
               <div class="mb-3">
-                <label for="inputEmail" class="form-label">Номер телефону/E-mail</label>
+                <label for="inputEmail" class="form-label" style="font-size: 21px; font-family: Montserrat;">Номер телефону/E-mail</label>
                 <input type="email" class="form-control" id="inputEmail" placeholder="Введіть номер телефону або E-mail" required>
               </div>
               <div class="mb-3">
-                <label for="inputAmount" class="form-label">Сума пожертвування</label>
+                <label for="inputAmount" class="form-label" style="font-size: 21px; font-family: Montserrat;">Сума пожертвування</label>
                 <div class="input-group">
                   <input type="number" class="form-control" id="inputAmount" placeholder="Введіть суму пожертвування" required>
                 </div>
               </div>
               <div class="mb-3">
-                <label for="inputCardNumber" class="form-label">Отримувач</label>
+                <label for="inputCardNumber" class="form-label" style="font-size: 21px; font-family: Montserrat;">Отримувач</label>
                 <input type="text" class="form-control" id="inputCardNumber" placeholder="Введіть номер IBAN або номер картки" required>
               </div>
               <div class="mb-3">
-                <label for="account" class="fs-3">З картки:</label>
+                <label for="account" class="fs-3" style="font-size: 21px; font-family: Montserrat;">З картки:</label>
                 <select class="form-control bg-transparent" id="account">
                   <option>UAH картка</option>
                   <option>USD картка</option>
